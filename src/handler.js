@@ -71,7 +71,7 @@ const getBookByIdHandler = (request, h) => {
 
     const book = books.filter((b) => b.id === bookId)[0]
 
-    if ( book !== 'undefined' ) {
+    if ( book !== undefined ) {
         const response = h.response({
             status: 'success',
             data: {
